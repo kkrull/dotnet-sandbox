@@ -1,7 +1,7 @@
-# .NET Core Sandbox
+# .NET Sandbox
 
-Move fast and break stuff.
+Sandbox monorepo to try things out in the .NET ecosystem.
 
-Then clean it up, you slob.
-
-
+As with my other "sandbox" repositories, each directory here is its own,
+self-contained project.  Look for code and documentation in those directories,
+to learn more.
