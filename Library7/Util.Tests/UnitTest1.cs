@@ -7,6 +7,6 @@ public class GreeterTest
   public void Greet_AddressesEverybody()
   {
     var subject = new Greeter();
-    Assert.AreEqual("Hello World!", subject.Greet());
+    Assert.Equal("Hello World!", subject.Greet());
   }
 }
