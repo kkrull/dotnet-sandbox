@@ -46,9 +46,20 @@ dotnet new console --framework 7.0
 
 ## Run the application
 
+Run it in one command (Debug configuration):
+
 ```shell
 dotnet run
 ```
+
+Or do it in two:
+
+```shell
+dotnet build
+dotnet bin/Debug/net7.0/HelloWorld7.dll
+```
+
+### Release Configuration
 
 If you're feeling frisky, build it for Release:
 
