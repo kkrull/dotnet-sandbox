@@ -50,6 +50,27 @@ dotnet new console --framework 7.0
 dotnet run
 ```
 
+If you're feeling frisky, build it for Release:
+
+```shell
+dotnet run --configuration Release
+```
+
+## Publish the application
+
+This makes an executable that can run on the target platform (e.g. an executable
+file like `.exe` on Windows):
+
+```shell
+dotnet publish --configuration Release
+```
+
+Then it runs like so (macOS example):
+
+```shell
+./bin/Release/net7.0/publish/HelloWorld7
+```
+
 ## VS Code Integration
 
 VS Code has to be opened in this directory with just the one solution, not in
