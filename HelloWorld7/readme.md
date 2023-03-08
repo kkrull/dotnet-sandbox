@@ -43,3 +43,9 @@ mkdir HelloWorld7
 cd HelloWorld7
 dotnet new console --framework 7.0
 ```
+
+## Run the application
+
+```shell
+dotnet run
+```
