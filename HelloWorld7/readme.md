@@ -44,6 +44,8 @@ cd HelloWorld7
 dotnet new console --framework 7.0
 ```
 
+This creates a standalone project, without a solution.
+
 ## Run the application
 
 Run it in one command (Debug configuration):
