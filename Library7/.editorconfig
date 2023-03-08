@@ -6,3 +6,8 @@ end_of_line = lf
 indent_size = 2
 indent_style = space
 insert_final_newline = true
+
+[*.csproj, *.sln]
+end_of_line = crlf
+indent_style = tab
+
