@@ -10,4 +10,5 @@
 
 - Add test project with xUnit: `dotnet new xunit -o Util.Tests`
 - Add it to the solution: `dotnet sln add Util.Tests`
+- Add reference to the project being tested: `dotnet add Util.Tests reference Util`
 - Test it: `dotnet test`
