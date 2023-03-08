@@ -1,6 +1,3 @@
-.idea/
+# .NET
 bin/
 obj/
-
-venv/
-.vscode
