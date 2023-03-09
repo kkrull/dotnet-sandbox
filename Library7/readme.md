@@ -18,3 +18,8 @@
 ```shell
 dotnet watch test --project Util.Tests
 ```
+
+## Run it
+
+- Add a console application project: `dotnet new console -o Greeter --use-program-main`
+- Add it to the solution: `dotnet sln add Greeter`
