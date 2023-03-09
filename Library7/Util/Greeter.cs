@@ -3,8 +3,8 @@
 using System;
 public class Greeter
 {
-  public String Greet()
+  public String Greet(string name = "World")
   {
-    return "Hello World!";
+    return string.Format("Hello {0}!", name);
   }
 }

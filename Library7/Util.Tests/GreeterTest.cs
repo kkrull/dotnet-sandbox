@@ -9,4 +9,11 @@ public class GreeterTest
     var subject = new Greeter();
     Assert.Equal("Hello World!", subject.Greet());
   }
+
+  [Fact]
+  public void Greet_AddressesSomebody()
+  {
+    var subject = new Greeter();
+    Assert.Equal("Hello George!", subject.Greet("George"));
+  }
 }

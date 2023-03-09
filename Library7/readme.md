@@ -12,3 +12,9 @@
 - Add it to the solution: `dotnet sln add Util.Tests`
 - Add reference to the project being tested: `dotnet add Util.Tests reference Util`
 - Test it: `dotnet test`
+
+## Watch it
+
+```shell
+dotnet watch test --project Util.Tests
+```
