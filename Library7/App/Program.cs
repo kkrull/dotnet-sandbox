@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Util;
 
 namespace App;
@@ -7,7 +8,7 @@ class Program
   static void Main(string[] args)
   {
     var greeter = new Greeter();
-    string message = args.Length == 0 ? greeter.Greet() : greeter.Greet(args[0]);
+    var message = args.Select(x => greeter.Greet(x)).FirstOrDefault(greeter.Greet());
     Console.WriteLine(message);
   }
 }
