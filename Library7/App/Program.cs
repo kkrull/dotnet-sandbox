@@ -8,6 +8,6 @@ class Program
   {
     var greeter = new Greeter();
     string message = args.Length == 0 ? greeter.Greet() : greeter.Greet(args[0]);
-    Console.WriteLine(greeter.Greet(message));
+    Console.WriteLine(message);
   }
 }
