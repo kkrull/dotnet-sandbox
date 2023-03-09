@@ -3,6 +3,7 @@
     <ProjectReference Include="..\Util\Util.csproj" />
   </ItemGroup>
   <PropertyGroup>
+    <AssemblyName>Greet</AssemblyName>
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
