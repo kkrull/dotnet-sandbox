@@ -23,3 +23,4 @@ dotnet watch test --project Util.Tests
 
 - Add a console application project: `dotnet new console -o Greeter --use-program-main`
 - Add it to the solution: `dotnet sln add Greeter`
+- Add a reference to the Util project: `dotnet add Greeter reference Util`
