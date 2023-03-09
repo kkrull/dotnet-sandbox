@@ -1,3 +1,5 @@
+.DEFAULT_GOAL := build
+
 .PHONY: build
 build:
 	dotnet build
@@ -17,3 +19,7 @@ run:
 .PHONY: test
 test:
 	dotnet test
+
+.PHONY: watch
+watch:
+	dotnet watch test --project Util.Tests
