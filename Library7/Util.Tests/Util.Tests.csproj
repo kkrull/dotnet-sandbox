@@ -1,11 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-
+    <ImplicitUsings>disable</ImplicitUsings>
     <IsPackable>false</IsPackable>
+    <Nullable>enable</Nullable>
+    <TargetFramework>net7.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -24,5 +22,4 @@
   <ItemGroup>
     <ProjectReference Include="..\Util\Util.csproj" />
   </ItemGroup>
-
 </Project>
