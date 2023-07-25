@@ -1,0 +1,6 @@
+# C#.NET
+*.csproj.user
+.vs/
+bin/
+packages/
+obj/
