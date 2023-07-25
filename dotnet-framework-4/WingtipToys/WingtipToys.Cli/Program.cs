@@ -13,6 +13,10 @@ namespace Wingtip.Cli
     {
       Console.WriteLine("==Products==");
       using (var db = new WingtipsContext()) {
+        var aProduct = new Product { Name = "Rocket Sauce" };
+        db.Products.Add(aProduct);
+        db.SaveChanges();
+
         var products = from p in db.Products
                     orderby p.Name
                     select p;
