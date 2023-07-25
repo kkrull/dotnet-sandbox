@@ -12,7 +12,7 @@ namespace Wingtip.Cli
     public static void Main(string[] args)
     {
       Console.WriteLine("==Products==");
-      using (var db = new WingtipsContext()) {
+      using (var db = new WingtipToysContext()) {
         var aProduct = new Product { Name = "Rocket Sauce" };
         db.Products.Add(aProduct);
         db.SaveChanges();

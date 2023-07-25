@@ -5,16 +5,16 @@ using System.Linq;
 
 namespace WingtipToys.Models
 {
-  public class WingtipsContext : DbContext
+  public class WingtipToysContext : DbContext
   {
-    // Your context has been configured to use a 'WingtipsContext' connection string from your application's 
+    // Your context has been configured to use a 'WingtipToysContext' connection string from your application's 
     // configuration file (App.config or Web.config). By default, this connection string targets the 
-    // 'WingtipToys.Models.WingtipsContext' database on your LocalDb instance. 
+    // 'WingtipToys.Models.WingtipToysContext' database on your LocalDb instance. 
     // 
-    // If you wish to target a different database and/or database provider, modify the 'WingtipsContext' 
+    // If you wish to target a different database and/or database provider, modify the 'WingtipToysContext' 
     // connection string in the application configuration file.
-    public WingtipsContext()
-        : base("name=WingtipsContext")
+    public WingtipToysContext()
+        : base("name=WingtipToysContext")
     {
     }
 
