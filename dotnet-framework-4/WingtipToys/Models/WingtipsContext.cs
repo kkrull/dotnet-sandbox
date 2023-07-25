@@ -1,4 +1,5 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 
@@ -24,7 +25,13 @@ namespace WingtipToys.Models
 
   public class Product
   {
+    [ScaffoldColumn(false)]
     public int Id { get; set; }
+
+    [Required, StringLength(100)]
     public string Name { get; set; }
+
+    [Display(Name="Price")]
+    public double? UnitPrice { get; set; }
   }
 }
