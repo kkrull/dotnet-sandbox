@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{35035814-E00C-4CB0-9496-DF5050A3AEAA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Wingtip.Cli</RootNamespace>
-    <AssemblyName>Wingtip.Cli</AssemblyName>
+    <RootNamespace>WingtipToys.Cli</RootNamespace>
+    <AssemblyName>WingtipToys.Cli</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

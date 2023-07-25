@@ -4,7 +4,7 @@ VisualStudioVersion = 16.0.33801.447
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys.Web", "WingtipToys.Web\WingtipToys.Web.csproj", "{7135447F-F86F-4B87-B5EF-21DBA180A054}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wingtip.Cli", "Wingtip.Cli\Wingtip.Cli.csproj", "{35035814-E00C-4CB0-9496-DF5050A3AEAA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WingtipToys.Cli", "WingtipToys.Cli\WingtipToys.Cli.csproj", "{35035814-E00C-4CB0-9496-DF5050A3AEAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
