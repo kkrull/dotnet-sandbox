@@ -1,5 +1,4 @@
 using System;
-using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 
@@ -21,17 +20,5 @@ namespace WingtipToys.Models
     // Add a DbSet for each entity type that you want to include in your model. For more information 
     // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
     public virtual DbSet<Product> Products { get; set; }
-  }
-
-  public class Product
-  {
-    [ScaffoldColumn(false)]
-    public int Id { get; set; }
-
-    [Required, StringLength(100)]
-    public string Name { get; set; }
-
-    [Display(Name="Price"), Required]
-    public double? UnitPrice { get; set; }
   }
 }
