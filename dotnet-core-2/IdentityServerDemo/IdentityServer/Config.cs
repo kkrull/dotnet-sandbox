@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using IdentityServer4;
 using IdentityServer4.Models;
 using IdentityServer4.Test;

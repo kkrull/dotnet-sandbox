@@ -1,4 +1,4 @@
-﻿namespace Util;
+namespace Util;
 
 using System;
 public class Greeter

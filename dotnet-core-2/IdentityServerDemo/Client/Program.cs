@@ -1,4 +1,4 @@
-﻿using IdentityModel.Client;
+using IdentityModel.Client;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Linq;
