@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Common.Logging.Simple;
 using Splitio.Services.Client.Classes;
 

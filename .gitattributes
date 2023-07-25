@@ -1,6 +1,11 @@
 #https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings?platform=windows#example
 
+* text=auto eol=lf
+
 .gitattributes text eol=lf
+.gitignore text eol=lf
+
+*.md text eol=lf
 
 *.asax text eol=lf
 *.aspx text eol=lf
@@ -11,3 +16,4 @@
 *.js text eol=lf
 *.Master text eol=lf
 *.sln text eol=lf
+*.yaml text eol=lf
