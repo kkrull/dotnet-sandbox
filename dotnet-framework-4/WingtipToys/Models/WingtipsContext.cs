@@ -2,18 +2,18 @@ using System;
 using System.Data.Entity;
 using System.Linq;
 
-namespace WingtipToys
+namespace WingtipToys.Models
 {
-  public class Product : DbContext
+  public class WingtipsContext : DbContext
   {
-    // Your context has been configured to use a 'Product' connection string from your application's 
+    // Your context has been configured to use a 'WingtipsContext' connection string from your application's 
     // configuration file (App.config or Web.config). By default, this connection string targets the 
-    // 'WingtipToys.Product' database on your LocalDb instance. 
+    // 'WingtipToys.Models.WingtipsContext' database on your LocalDb instance. 
     // 
-    // If you wish to target a different database and/or database provider, modify the 'Product' 
+    // If you wish to target a different database and/or database provider, modify the 'WingtipsContext' 
     // connection string in the application configuration file.
-    public Product()
-        : base("name=Product")
+    public WingtipsContext()
+        : base("name=WingtipsContext")
     {
     }
 
