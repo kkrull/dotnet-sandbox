@@ -21,9 +21,8 @@ namespace Wingtip.Cli
       var solutionDirectory = assemblyDirectoryInfo.Parent.Parent.Parent;
       Console.WriteLine("Solution directory: {0}", solutionDirectory.FullName);
 
-      var dataDirectory = Path.Combine(solutionDirectory.FullName, "Data");
+      var dataDirectory = Path.Combine(solutionDirectory.FullName, "WingtipToys.Web", "App_Data");
       Console.WriteLine("Data directory: {0}", dataDirectory);
-
 
       Directory.CreateDirectory(dataDirectory);
       AppDomain.CurrentDomain.SetData("DataDirectory", dataDirectory);

@@ -8,20 +8,29 @@ using WingtipToys.Models;
 
 namespace WingtipToys
 {
+  //Life cycle events for the whole application
+  //https://learn.microsoft.com/en-us/previous-versions/aspnet/2wawkw1c(v=vs.100)
   public class Global : HttpApplication
   {
     void Application_Start(object sender, EventArgs e)
     {
-      // Code that runs on application startup
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-      //Initialize the database right away, instead of lazily
-      Database.SetInitializer(new WingtipToysInitializer());
+      Debug.Print("AppDomain[DataDirectory]: {0}", DataDirectory());
+      InitializeDatabaseNow(new WingtipToysInitializer());
+    }
+
+    private static string DataDirectory()
+    {
+      return (string)AppDomain.CurrentDomain.GetData("DataDirectory");
+    }
+
+    private static void InitializeDatabaseNow(WingtipToysInitializer initializer)
+    {
+      Database.SetInitializer(initializer);
       var db = new WingtipToysContext();
       db.Database.Initialize(true);
-
-      Debug.Print("AppDomain[DataDirectory]: {0}", AppDomain.CurrentDomain.GetData("DataDirectory"));
       Debug.Print("ConnectionString: {0}", db.Database.Connection.ConnectionString);
     }
   }
