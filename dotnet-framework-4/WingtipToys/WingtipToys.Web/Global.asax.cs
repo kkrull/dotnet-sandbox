@@ -16,12 +16,13 @@ namespace WingtipToys
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-      Debug.Print("AppDomain[DataDirectory]: {0}", AppDomain.CurrentDomain.GetData("DataDirectory"));
-
       //Initialize the database right away, instead of lazily
       Database.SetInitializer(new WingtipToysInitializer());
       var db = new WingtipToysContext();
       db.Database.Initialize(true);
+
+      Debug.Print("AppDomain[DataDirectory]: {0}", AppDomain.CurrentDomain.GetData("DataDirectory"));
+      Debug.Print("ConnectionString: {0}", db.Database.Connection.ConnectionString);
     }
   }
 }
