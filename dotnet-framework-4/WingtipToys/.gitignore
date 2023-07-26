@@ -5,5 +5,8 @@ bin/
 packages/
 obj/
 
+# ASP.NET
+App_Data/
+
 # Entity Framework
 Data/
