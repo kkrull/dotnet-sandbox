@@ -1,5 +1,6 @@
 using System;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Web;
 using System.Web.Optimization;
 using System.Web.Routing;
@@ -15,6 +16,7 @@ namespace WingtipToys
       RouteConfig.RegisterRoutes(RouteTable.Routes);
       BundleConfig.RegisterBundles(BundleTable.Bundles);
 
+      Debug.Print("AppDomain[DataDirectory]: {0}", AppDomain.CurrentDomain.GetData("DataDirectory"));
       Database.SetInitializer(new WingtipToysInitializer());
     }
   }
