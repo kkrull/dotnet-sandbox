@@ -2,21 +2,15 @@ using System.Data.Entity;
 
 namespace WingtipToys.Models
 {
+  //The object you use to interact with the database via Entity Framework (Code First)
+  //http://go.microsoft.com/fwlink/?LinkId=390109
   public class WingtipToysContext : DbContext
   {
-    // Your context has been configured to use a 'WingtipToysContext' connection string from your application's 
-    // configuration file (App.config or Web.config). By default, this connection string targets the 
-    // 'WingtipToys.Models.WingtipToysContext' database on your LocalDb instance. 
-    // 
-    // If you wish to target a different database and/or database provider, modify the 'WingtipToysContext' 
-    // connection string in the application configuration file.
-    public WingtipToysContext()
-        : base("name=WingtipToysContext")
+    //Name must match the name of a connection string in [App,Web].config, or there will be weeping and gnashing of teeth
+    public WingtipToysContext() : base("name=WingtipToysContext")
     {
     }
 
-    // Add a DbSet for each entity type that you want to include in your model. For more information 
-    // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
     public virtual DbSet<Product> Products { get; set; }
   }
 }

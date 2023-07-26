@@ -3,6 +3,7 @@ using System.Data.Entity;
 
 namespace WingtipToys.Models
 {
+  //(Re-)initializes the database with some seed data, whenever the model changes
   public class WingtipToysInitializer : DropCreateDatabaseIfModelChanges<WingtipToysContext>
   {
     protected override void Seed(WingtipToysContext context)

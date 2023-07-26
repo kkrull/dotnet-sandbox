@@ -9,7 +9,6 @@ namespace Wingtip.Cli
   {
     public static void Main(string[] args)
     {
-      //TODO KDK: Point this to the App_Data used by Web, instead of trying ot re-configure Web
       var baseDirectory = AppDomain.CurrentDomain.BaseDirectory; //<solution>/cli/bin/debug
       Console.WriteLine("Base directory: {0}", baseDirectory);
 
