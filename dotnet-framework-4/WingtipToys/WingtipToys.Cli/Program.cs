@@ -1,13 +1,13 @@
 using System;
-using System.Linq;
-using System.IO;
-using WingtipToys.Models;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 using System.Reflection;
+using WingtipToys.Models;
 
-namespace Wingtip.Cli
+namespace WingtipToys.Cli
 {
-  public class Program
+  public static class Program
   {
     public static void Main(string[] args)
     {
@@ -33,9 +33,14 @@ namespace Wingtip.Cli
     private static DirectoryInfo AppDirectory()
     {
       var cliAssemblyCodebase = Assembly.GetExecutingAssembly().GetName().CodeBase;
-      var cliAssemblyUri = new Uri(Path.GetDirectoryName(cliAssemblyCodebase));
+      var cliAssemblyDirectory = Path.GetDirectoryName(cliAssemblyCodebase);
+      if (cliAssemblyDirectory == null) {
+        throw new ApplicationException($"Unable to determine directory containing CLI assembly: {cliAssemblyCodebase}");
+      }
+
+      var cliAssemblyUri = new Uri(cliAssemblyDirectory);
       var assemblyDirectoryInfo = new DirectoryInfo(cliAssemblyUri.LocalPath); //<solution>/WingtipToys.Cli/Bin/Debug
-      return assemblyDirectoryInfo.Parent.Parent.Parent;
+      return assemblyDirectoryInfo.Parent?.Parent?.Parent;
     }
 
     private static void UseDataDirectory(string dataDirectory)
