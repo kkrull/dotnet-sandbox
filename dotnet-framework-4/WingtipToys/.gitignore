@@ -1,6 +1,12 @@
-# C#.NET
+# .NET
 *.csproj.user
 .vs/
 bin/
 packages/
 obj/
+
+# ASP.NET
+App_Data/
+
+# Entity Framework
+Data/
