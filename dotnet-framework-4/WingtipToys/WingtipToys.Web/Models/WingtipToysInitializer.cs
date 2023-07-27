@@ -16,7 +16,7 @@ namespace WingtipToys.Models
       return new List<Product>() {
         new Product() { Name = "LTD MH400-NT", UnitPrice = 600 },
         new Product() { Name = "GHS Boomers 10", UnitPrice = 8 },
-        new Product() { Name= "Rocket Sauce", UnitPrice = 2.25 },
+        new Product() { Name = "Rocket Sauce", UnitPrice = 2.25 },
       };
     }
   }
