@@ -3,11 +3,10 @@ using System.Web.UI;
 
 namespace WingtipToys
 {
-    public partial class SiteMaster : MasterPage
+  public partial class SiteMaster : MasterPage
+  {
+    protected void Page_Load(object sender, EventArgs e)
     {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-        }
     }
+  }
 }
