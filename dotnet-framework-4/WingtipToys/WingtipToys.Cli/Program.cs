@@ -26,8 +26,7 @@ namespace WingtipToys.Cli
     private static string AppDataDirectory()
     {
       var appDirectory = AppDirectory();
-      var dataDirectory = Path.Combine(appDirectory.FullName, "WingtipToys.Web", "App_Data");
-      return dataDirectory;
+      return Path.Combine(appDirectory.FullName, "WingtipToys.Web", "App_Data");
     }
 
     private static DirectoryInfo AppDirectory()
@@ -39,8 +38,8 @@ namespace WingtipToys.Cli
       }
 
       var cliAssemblyUri = new Uri(cliAssemblyDirectory);
-      var assemblyDirectoryInfo = new DirectoryInfo(cliAssemblyUri.LocalPath); //<solution>/WingtipToys.Cli/Bin/Debug
-      return assemblyDirectoryInfo.Parent?.Parent?.Parent;
+      var assemblyDirectory = new DirectoryInfo(cliAssemblyUri.LocalPath); //<solution>/WingtipToys.Cli/Bin/Debug
+      return assemblyDirectory.Parent?.Parent?.Parent;
     }
 
     private static void UseDataDirectory(string dataDirectory)
