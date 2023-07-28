@@ -73,14 +73,14 @@
     <br/>
   </div>
   
-  <div id="CategoryMenu" style="text-align: center">
+  <div id="CategoryMenu" class="app__categories">
     <asp:ListView
       ID="categoryList"
       ItemType="WingtipToys.Models.Category"
       runat="server"
       SelectMethod="GetCategories">
       <ItemTemplate>
-        <b style="font-size: large; font-style: normal">
+        <b class="category-list-item__name">
           <a href="~/ProductDetails.aspx">
             <%#: Item.Name %>
           </a>

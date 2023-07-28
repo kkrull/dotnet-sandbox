@@ -33,6 +33,15 @@ textarea {
 
 /* App-specific styling */
 
+.app__categories {
+  text-align: center;
+}
+
 .app__title {
-  text-align: center
+  text-align: center;
+}
+
+.category-list-item__name {
+  font-size: large;
+  font-style: normal;
 }
