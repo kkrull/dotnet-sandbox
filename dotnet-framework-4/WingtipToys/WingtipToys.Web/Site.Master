@@ -72,6 +72,22 @@
     </a>
     <br/>
   </div>
+  
+  <div id="CategoryMenu" style="text-align: center">
+    <asp:ListView
+      ID="categoryList"
+      ItemType="WingtipToys.Models.Category"
+      runat="server"
+      SelectMethod="GetCategories">
+      <ItemTemplate>
+        <b style="font-size: large; font-style: normal">
+          <a href="~/ProductDetails.aspx">
+            <%#: Item.Name %>
+          </a>
+        </b>
+      </ItemTemplate>
+    </asp:ListView>
+  </div>
 
   <div class="container body-content">
     <asp:ContentPlaceHolder ID="MainContent" runat="server">

@@ -8,7 +8,17 @@ namespace WingtipToys.Models
   {
     protected override void Seed(WingtipToysContext context)
     {
+      GenerateCategories().ForEach(x => context.Categories.Add(x));
       GenerateProducts().ForEach(x => context.Products.Add(x));
+    }
+
+    private static List<Category> GenerateCategories()
+    {
+      return new List<Category>() {
+        new Category() { Name = "Accessories" },
+        new Category() { Name = "Guitars" },
+        new Category() { Name = "Strings" },
+      };
     }
 
     private static List<Product> GenerateProducts()
