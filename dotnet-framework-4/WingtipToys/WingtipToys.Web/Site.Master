@@ -81,7 +81,7 @@
       SelectMethod="GetCategories">
       <ItemTemplate>
         <b class="category-list-item__name">
-          <a href="~/ProductDetails.aspx">
+          <a href="/ProductList.aspx?id=<%#: Item.Id %>">
             <%#: Item.Name %>
           </a>
         </b>
