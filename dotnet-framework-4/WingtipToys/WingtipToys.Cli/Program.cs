@@ -13,6 +13,7 @@ namespace WingtipToys.Cli
     {
       UseDataDirectory(AppDataDirectory());
       using (var db = new WingtipToysContext()) {
+        ListCategories(db.Categories.OrderBy(x => x.Name));
         ListProducts(db.Products.OrderBy(x => x.Name));
       }
 
@@ -50,11 +51,25 @@ namespace WingtipToys.Cli
 
     /* Application data */
 
+    private static void ListCategories(IEnumerable<Category> categories)
+    {
+      Console.WriteLine();
+      Console.WriteLine("==Categories==");
+      foreach (var category in categories) {
+        Console.WriteLine("- {0}: {1}", category.Id, category.Name);
+      }
+    }
+
     private static void ListProducts(IEnumerable<Product> products)
     {
+      Console.WriteLine();
       Console.WriteLine("==Products==");
       foreach (var product in products) {
-        Console.WriteLine("- {0}", product.Name);
+        Console.WriteLine("- {0}: {1} (categoryId: {2})",
+          product.Id, 
+          product.Name,
+          product.CategoryId
+        );
       }
     }
   }
