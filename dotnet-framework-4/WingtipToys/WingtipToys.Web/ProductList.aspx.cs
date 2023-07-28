@@ -3,7 +3,7 @@ using System.Web.UI;
 
 namespace WingtipToys
 {
-  public partial class ProductList : Page
+  public partial class _ProductList : Page
   {
     protected void Page_Load(object sender, EventArgs e)
     {
