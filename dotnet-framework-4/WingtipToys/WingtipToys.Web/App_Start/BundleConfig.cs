@@ -4,9 +4,10 @@ namespace WingtipToys
 {
   //Answers the question: How did ASP.NET solve the problem of loading scripts and dependencies in the right order?
   //Spoiler: It didn't.
-  public class BundleConfig
+  public static class BundleConfig
   {
-    // For more information on Bundling, visit https://go.microsoft.com/fwlink/?LinkID=303951
+    //Bundles of JavaScript code that ASPs load via script tags by calling Scripts.Render
+    //https://go.microsoft.com/fwlink/?LinkID=303951
     public static void RegisterBundles(BundleCollection bundles)
     {
       bundles.Add(new ScriptBundle("~/bundles/WebFormsJs").Include(
