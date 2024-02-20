@@ -1,0 +1,10 @@
+# Git
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# .NET
+*.config text eol=lf
+*.cs text eol=lf
+*.csproj text eol=lf
+*.sln text eol=lf
+
